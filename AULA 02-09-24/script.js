@@ -60,3 +60,34 @@ function calcular() {
     const resultado2 = document.getElementById("resultado2")
     resultado2.innerText = `O número aleatório é ${numAleatorio}`
 }
+
+
+// //Como utilizar o array
+
+// const nomes = ['Caio', 'Ana', 'Julia', 'Pedro']
+// // Cada alemento do array tem um index
+// console.log(nomes[1])
+
+// function gerarAleatorio() {
+//     const numAleatorio = Math.floor(Math.random() * 4)
+//     return numAleatorio
+// }
+
+// function sortearNome() {
+//     let numserteado = gerarAleatorio()
+//     console.log(nomes[numeroSorteado])
+// }
+
+
+//COMO SORTEAR FUTUROS
+
+const futuros = ['1', '2', '3', '4']
+function gerarFuturos() {
+    const futuroAleatorio = Math.floor(Math.random() * futuros.length)
+    return futuroAleatorio
+}
+
+function sortearFuturo() {
+    let futuroSorteado = gerarFuturos()
+    alert(futuros[futuroSorteado])
+}
